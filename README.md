@@ -14,5 +14,5 @@ sudo apt update && sudo apt install -y git
 git clone https://github.com/rafaellrossi/novnc-ubuntu-openbox.git
 cd novnc-ubuntu-openbox
 docker build -t novnc-ubuntu-openbox .
-docker run -d -p 6080:6080 novnc-ubuntu-openbox
+docker run -it -p 6080:6080 novnc-ubuntu-openbox
 ```
