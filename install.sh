@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Atualizar o sistema e instalar dependências
+# Atualizar o sistema e instalar os pacotes necessários
 apt update && apt upgrade -y
 DEBIAN_FRONTEND=noninteractive apt install -y \
     wget sudo openbox lxterminal pwgen novnc tightvncserver \
