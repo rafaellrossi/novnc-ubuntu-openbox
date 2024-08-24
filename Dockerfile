@@ -7,4 +7,6 @@ RUN apt update && apt upgrade -y && \
     curl -o /usr/local/bin/install.sh https://raw.githubusercontent.com/rafaellrossi/novnc-ubuntu-openbox/main/install.sh && \
     chmod +x /usr/local/bin/install.sh
 
+EXPOSE 6080
+
 CMD ["/bin/bash", "-c", "/usr/local/bin/install.sh && tail -f /dev/null"]
